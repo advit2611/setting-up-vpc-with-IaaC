@@ -142,3 +142,8 @@ resource "aws_instance" "web-server-instance" {
     }
   
 }
+
+# To show output for some attribute of a Service
+output "public_ip_of_EC2_instacne" {
+    value = aws_instance.first-ec2.public_ip  
+}

@@ -9,3 +9,11 @@
 ## Deploying
 - Run command `terraform plan` to get an idea what changes you are about to make
 - Then run `terraform apply` to deploy changes
+
+## Add output
+- Add output to show values of some attributes by adding 
+```hcl
+output "name" {
+    value = service.attribute
+}
+```
